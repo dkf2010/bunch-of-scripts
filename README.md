@@ -1,4 +1,4 @@
-# BUNSH OF SCRIPTS
+# BUNCH OF SCRIPTS
 
 ## Table Of Contents
   * [BASH](bash.md)
