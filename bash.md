@@ -3,13 +3,11 @@
 ## Table Of Contents
   * [get script parameter](#get-script-parameter)
   * [user input](#user-input)
-  * [REGEX](#REGEX)
+  * [REGEX](#regex)
   * [number checks](#number-checks)
-  * [Array](#Array)
-  * [array item count](#array-item-count)
-  * [loop though an array](#loop-though-an-array)
+  * [Array](#array)
   * [extract text](#extract-text)
-  * [network cards with MAC address](#network-cards-with-MAC-address)
+  * [network cards with MAC address](#network-cards-with-mac-address)
   * [loop through all template and user folders](#loop-through-all-template-and-user-folders)
 
 
