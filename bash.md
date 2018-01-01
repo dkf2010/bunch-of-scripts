@@ -53,12 +53,8 @@ fi
 <pre>
 if [ -z "${apiuser}" ] || [ -z "${apipass}" ]; then
 	echo "Please enter your credentials"
-	printf "Username: "
-	read apiuser
-	printf "Passwort: "
-	stty -echo # disable screen output
-	read apipass
-	stty echo # enable screen output
+	read -r -p "Username: " apiuser
+	read -r -p "Passwort: " -s apipass
 	echo ""
 fi
 
@@ -169,7 +165,7 @@ done
 for ((i = 0; i < ${#FOLDER_ARRAY[*]}; i++))
 do
 	USER_HOME=${FOLDER_ARRAY[$i]}
-	USER_UID=`basename "${USER_HOME}"`
+	USER_UID=$(basename "${USER_HOME}")
 	if [ ! "${USER_UID}" = "Shared" ] && [ ! "${USER_UID}" = "Guest" ]; then
 		touch "${USER_HOME}/Desktop/foo"
 		if [ ! "${USER_UID}" = "English.lproj" ] && [ ! "${USER_UID}" = "German.lproj" ]; then
